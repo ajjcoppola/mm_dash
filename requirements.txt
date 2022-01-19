@@ -1,3 +1,5 @@
-altair
+#altair
+plotly
 pandas
 streamlit
+
