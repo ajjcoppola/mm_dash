@@ -7,10 +7,13 @@ of strategies implemented on the open source platform [Crypto Chassis](https://g
 
 Running the CCAPI Market Making App, in backtest mode, using the Avellenda-Stoikov code,
 we produce log files for each day of the backtest.
+
 ### Crypto Backtest Run analyzed in this Dashboard
 
 
-### Open Crypto Trading Initiative
+### Open Crypto Trading Initiative Information
 [Blog](https://medium.com/open-crypto-market-data-initiative)
+
 [Code](https://github.com/crypto-chassis/ccapi)
+
 [Discord](https://discord.gg/b5EKcp9s8T)
