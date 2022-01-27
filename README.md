@@ -1,11 +1,11 @@
 # Crypto Market Making Dashboard
 
 An open source streamlit dashboard to analyze output data from backtest runs
-of strategies implemented on the open source platform [Crypto Chassis](https://github.com/crypto-chassis)
+of strategies implemented on the open source platform [Crypto Chassis(CCAPI)](https://github.com/crypto-chassis)
 
 ### Description
 
-Running the CCAPI Market Making App, in backtest mode, using the Avellenda-Stoikov code,
+Running the CCAPI Market Making App, in backtest mode, using the Avelleneda-Stoikov code,
 we produce log files for each day of the backtest.
 
 ### Crypto Backtest Run analyzed in this Dashboard
