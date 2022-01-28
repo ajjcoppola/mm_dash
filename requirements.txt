@@ -1,5 +1,5 @@
 #altair
 plotly
 pandas
+pygithub
 streamlit
-
