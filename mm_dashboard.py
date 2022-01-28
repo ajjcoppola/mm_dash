@@ -42,7 +42,7 @@ axis_title_size = 16
 import urllib.request
 from pathlib import Path
 from typing import List, NamedTuple
-
+import tomlkit
 try:
     from typing import Literal
 except ImportError:
@@ -120,7 +120,7 @@ def get_csv_files_in_dir(directory):
 #files = get_csv_files_in_dir(str( HERE / "./ccapi-bt-data-1/"))
 #files
 
-def get_github_dir_dict(token_str=st.secrets.ghp,
+def get_github_dir_dict(token_str,
                         repo_str="/mm_dash" , 
                         repo_dir="ccapi-bt-data/kucoin__btc-usdt__2021-12-01__2021-12-24__av-stok-exhaust"):
     g = Github(token_str)
@@ -159,7 +159,16 @@ with st.echo(code_location='below'):
     fig = None
      
     if chart_visual == 'Sample Traces':
-        upf_dict = get_github_dir_dict()
+        try:
+            secr = st.secrets.ghp
+        except:
+            SECRET_CFG = HERE / "secrets.toml"
+            config_data = Path(SECRET_CFG).read_text()
+            secret_dict = tomlkit.loads(config_data)
+            secr = secret_dict['ghp']
+            print(f"config_data={config_data}  secret_dict={secret_dict}  secr={secr}")
+
+        upf_dict = get_github_dir_dict(token_str=secr)
         upf_list = sorted(upf_dict.keys())
 
         all = traces.checkbox("Select all", value=False)

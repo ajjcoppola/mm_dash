@@ -2,4 +2,5 @@
 plotly
 pandas
 pygithub
+tomlkit
 streamlit
