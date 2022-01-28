@@ -23,7 +23,7 @@ st.subheader("    Chart: Cumulative Returns of Strategy Equity versus  Midpoint 
 
 st.sidebar.subheader("**Info**")
 st.sidebar.markdown( "   This app takes as input a collection of daily account-balance.csv traces, which were produced from running a backtest simulation, using a CCAPI strategy on downloaded data from crypto exchanges.")
-st.sidebar.markdown( "    Scripts for downloading and running the strategy, to produce the output exhaust are supplied at this app's github location [mm_dash](https://github.comajjcoppola/mm_dash)")
+st.sidebar.markdown( "    Scripts for downloading and running the strategy, to produce the output exhaust are supplied at this app's github location [mm_dash](https://github.com/ajjcoppola/mm_dash)")
 st.sidebar.markdown( "    This takes input either from stored traces in a directory on the user's local machine, or from our github demo example location  [ccapi-bt-data](https://github.com/ajjcoppola/mm_dash/tree/master/ccapi-bt-data).  ")
 st.sidebar.markdown( "      ")
 st.sidebar.markdown("**References:**")
@@ -121,7 +121,7 @@ def get_csv_files_in_dir(directory):
 #files
 
 
-def get_github_dir_dict(token_str="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",
+def get_github_dir_dict(token_str="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",
                         repo_str="/mm_dash" , 
                         repo_dir="ccapi-bt-data/kucoin__btc-usdt__2021-12-01__2021-12-24__av-stok-exhaust"):
     g = Github(token_str)
