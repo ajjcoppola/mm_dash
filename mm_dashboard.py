@@ -121,7 +121,7 @@ def get_csv_files_in_dir(directory):
 #files
 
 
-def get_github_dir_dict(token_str="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",
+def get_github_dir_dict(token_str="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",
                         repo_str="/mm_dash" , 
                         repo_dir="ccapi-bt-data/kucoin__btc-usdt__2021-12-01__2021-12-24__av-stok-exhaust"):
     g = Github(token_str)
